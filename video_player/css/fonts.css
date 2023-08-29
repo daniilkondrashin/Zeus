@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
+@font-face { 
+  font-family: "InterRegular";
+  src: url("../fonts/InterRegular/InterRegular.eot");
+  src: url("../fonts/InterRegular/InterRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/InterRegular/InterRegular.woff") format("woff"),
+  url("../fonts/InterRegular/InterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face { 
+  font-family: "InterSemiBold";
+  src: url("../fonts/InterSemiBold/InterSemiBold.eot");
+  src: url("../fonts/InterSemiBold/InterSemiBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/InterSemiBold/InterSemiBold.woff") format("woff"),
+  url("../fonts/InterSemiBold/InterSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "InterMedium";
+  src: url(../fonts/InterMedium/Inter-Medium.ttf);
+}
+@font-face {
+  font-family: "InterLight";
+  src: url(../fonts/InterLight/Inter-Light.ttf);
+}

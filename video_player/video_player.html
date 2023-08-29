@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/video_player.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" type="text/css" href="./css/blocks/header.css" />
+    <title>Добавить устройство</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="room.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Добавить устройства</span>
+                </div>
+                <div class="header__container_icon-end">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="video">
+                <h1 class="video__titel"></h1>
+                <video class="video-player" id="video-player">
+                    <source src="pictures/vp.mp4" type="video/mp4">
+                </video>
+                <div class="progress">
+                    <div class="progress-range"></div>
+                </div>
+                <div class="timeline">
+                    <div class="currenttime" id="currenttime">00:00</div>
+                    <div class="duration" id="duration">00:00</div>
+                </div>
+                <div class="video-control">
+                    <div class="video-none"></div>
+                    <div class="video__buttons">
+                        <button class="play" id="play">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 4.99955C6 4.22776 6.83721 3.74689 7.50387 4.13577L19.5039 11.1358C20.1654 11.5217 20.1654 12.4775 19.5039 12.8633L7.50387 19.8633C6.83721 20.2522 6 19.7713 6 18.9996V4.99955ZM8 6.74023V17.2582L17.0154 11.9992L8 6.74023Z"
+                                    fill="#FF9A44" />
+                            </svg>
+                        </button>
+                        <button class="pause" id="pause">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M10 7.2C10 6.53726 9.55228 6 9 6C8.44772 6 8 6.53726 8 7.2V16.8C8 17.4627 8.44772 18 9 18C9.55228 18 10 17.4627 10 16.8V7.2ZM16 7.2C16 6.53726 15.5523 6 15 6C14.4477 6 14 6.53726 14 7.2V16.8C14 17.4627 14.4477 18 15 18C15.5523 18 16 17.4627 16 16.8V7.2Z"
+                                    fill="#FF9A44" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="video-volume">
+                        <input type="range">
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+</body>
+<script type="text/javascript" src="scripts/video_player.js"></script>
+
+</html>

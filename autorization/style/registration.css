@@ -1,0 +1,401 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face { 
+    font-family: "InterRegular";
+    src: url("../fonts/InterRegular/InterRegular.eot");
+    src: url("../fonts/InterRegular/InterRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/InterRegular/InterRegular.woff") format("woff"),
+    url("../fonts/InterRegular/InterRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "InterSemiBold";
+    src: url("../fonts/InterSemiBold/InterSemiBold.eot");
+    src: url("../fonts/InterSemiBold/InterSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/InterSemiBold/InterSemiBold.woff") format("woff"),
+    url("../fonts/InterSemiBold/InterSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "InterMedium";
+    src: url(../fonts/InterMedium/Inter-Medium.ttf);
+}
+html {
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+	line-height: 1;
+    min-height: 100%;
+    background-color: #F5F5F5;
+    min-width: 290px;
+    font-family: InterRegular;
+    color: #252020;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+}
+@media (max-width: 650px) {
+    body {
+        background-size: cover;
+    }
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.wrapper{
+    /*min-height: 100%;*/
+    display: grid;
+    overflow: auto;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    margin: 0 15px 0 15px;
+}
+.header{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    width: 100%;
+}
+
+.main{
+    
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 20px;
+}
+/*                  progressbar                      */
+.progressbar {
+    margin-top: 70px;
+    margin-bottom: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar-background_outer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 154, 68, 0.1);
+    position: relative;
+}
+.progressbar-background_inner {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar_number__container {
+    width: 65px;
+    height: 65px;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 22px;
+    font-family: "InterMedium";
+    color: #FF9A44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progressbar_number {
+    position: absolute;
+}
+.progress-ring {
+    position: absolute;
+}
+.form__input {
+    margin-top: 20px;
+}
+.progressbar_number-check_mark {
+    position: absolute;
+    transition: 0.5s;
+}
+.progress-ring__circle {
+    transform-origin: center;
+    transform: rotate(-90deg);
+    transition: stroke-dashoffset 0.3s;
+}
+.--hidden {
+    opacity: 0;
+}
+
+.titel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+/*          input-container                  */
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.label-input {
+    margin-bottom: 5px;
+}
+
+.password_reset__icon2 {
+    display: none;
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}  
+input[type=number]{
+    -moz-appearance: textfield;
+}
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+.input {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    height: 44px;
+    transition: all .2s ease-out;
+    padding-left: 10px;
+}
+.input-container:not(:last-child) {
+    margin-bottom: 16px;
+}
+.input:focus {
+    border: 1px solid #FFB779;
+    outline: 0;
+}
+.input:active {
+    border: 1px solid #FFB779;
+    outline: 0;
+}
+.input::placeholder {
+    color: #909295;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.input--error {
+    border: 1px solid #FC6076;
+}
+.main__subtitle_error {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FC6076;
+    margin-top: 10px;
+}
+#passwords_do_not_match {
+    display: none;
+    color: #FC6076;
+}
+#name__subtitle, #surname__subtitle, #email__subtitle, #phone_number__subtitle, #confirmation_code__subtitle, #password__subtitle {
+    display: none;
+}
+.main__subtitle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+.password_verification__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+.password_error, .change_password {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+#invalid_code {
+    display: none;
+}
+.password_error {
+    white-space: nowrap;
+    padding-right: 10px;
+    color: #FC6076;
+    display: none;
+}
+.done {
+    display: none;
+}
+.password_error--visible {
+    display: block;
+}
+.main__titel {
+    margin-top: 20px;
+}
+#waiting_for_the_code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#new_code {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+.password_invisible__icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    fill: #909295;
+}
+
+.password_visible__icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    fill: #FF9A44;
+}
+.subtitle {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #3C3C3C;
+    margin-top: 5px;
+}
+#subtitle_password_error {
+    transition: all .2s ease-out;
+}
+.subtitle_error {
+    color: #FC6076;
+}
+.gray {
+    color: #909295;
+}
+.password_input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#password {
+    width: 100%;
+}
+.timer_block {
+    display: none;
+    color: #979797;
+    text-align: center;
+}
+.change_password {
+    white-space: nowrap;
+    border: none;
+    transition: all .2s ease-out;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+}
+.contact_details, .confirmation_code, .password {
+    display: none;
+}
+/* .change_password:focus {
+    outline: 1px solid #FFB779;
+    border-radius: 5px;
+} */
+.change_password:active {
+    outline: 0;
+}
+@media (max-width: 300px) {
+    .password_arror {
+        white-space: normal;
+        line-height: 18px;
+    }
+    .change_password {
+        white-space: normal;
+        text-align: end;
+        line-height: 18px;
+    }
+}
+/* footer_button */
+.footer_button {
+    margin-top: 50px;
+    display: flex;
+    height: 50px;
+}
+.footer_button_size {
+    flex: auto;
+    min-width: 130px;
+    height: 50px;
+    background: #FF9A44;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #252020;
+}
+.footer__text__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 22px;
+}
+.footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border: none;
+}

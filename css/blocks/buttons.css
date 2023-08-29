@@ -1,0 +1,148 @@
+/*                      delete_all                           */
+.delete_all {
+    display: flex;
+    height: 35px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.delete_all_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #E34E42;
+    font-family: InterRegular;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.delete_all_button:hover {
+    background: #F8F8F8;
+}
+.delete_btn_img {
+    height: 18px;
+    width: 18px;
+    margin-right: 13px;
+}
+/*                  delete__button                     */
+.further_size {
+    margin: 15px;
+    height: 50px;
+}
+
+.foother__delete {
+    background: #FFF;
+    border: 1px solid #E1E1E1;
+    color: #E34E42;
+    font-family: InterRegular;
+    font-family: revert;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 5%;
+    cursor: pointer;
+    transition: all .2s ease-out;
+
+}
+
+.foother__delete:hover {
+    background: #F8F8F8;
+}
+/*                              footer_button                            */
+.footer_button {
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer_button_size {
+    flex: auto;
+    min-width: 130px;
+    height: 50px;
+    background: #FF9A44;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #252020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: ease-out .2s;
+}
+.footer_button_size:hover {
+    background: #FFAE58;
+}
+.button_cancellation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    background: #FFFFFF;
+    color: #909295;
+    cursor: pointer;
+}
+.button_cancellation:hover {
+    background: #F8F8F8;
+}
+.button_cancellation:link {
+    color: #909295;
+}
+
+.button_cancellation:visited {
+    color: #909295;
+}
+
+.button_cancellation:hover {
+    color: #909295;
+}
+
+.button_cancellation:active {
+    color: #909295;
+}
+/*                      add                          */
+.add {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF9A44;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    transition: ease-out .2s;
+}
+.add:hover {
+    background: #FFAE58;
+}
+.add-devices__button {
+    margin: 20px 15px 20px 15px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF9A44;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    cursor: pointer;
+    transition: ease-out .2s;
+}
+.add-devices__button:hover {
+    background: #FFAE58;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add-change.css">
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/blocks/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/blocks/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="./css/blocks/buttons.css" />
+    <title>Редактировать группу</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="adding_group.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Редактировать группу</span>
+                </div>
+                <div class="header__container_icon-end">
+                    <a class="delete__button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17 8C17.5523 8 18 8.44772 18 9V19C18 20.6569 16.6569 22 15 22H9C7.34315 22 6 20.6569 6 19V9C6 8.44772 6.44772 8 7 8H17ZM16 10H8V19C8 19.5523 8.44772 20 9 20H15C15.5523 20 16 19.5523 16 19V10ZM9 3C9 2.44772 9.44772 2 10 2H14C14.5523 2 15 2.44772 15 3V4H19C19.5523 4 20 4.44772 20 5C20 5.55228 19.5523 6 19 6H5C4.44772 6 4 5.55228 4 5C4 4.44772 4.44772 4 5 4H9V3Z"
+                                fill="#FF9A44" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="content">
+                <p class="title_content">Название группы</p>
+                <div class="input-text">
+                    <input type="text" class="input-text__content" placeholder="Например, Первый этаж" maxlength="20">
+                </div>
+                <p class="description">Не более 20 символов</p>
+                <div class="actions_content">
+                    <p class="title_content title_content_pos">Добавить устройства</p>
+                    <p class="description">
+                        Выберите действия (вкл/выкл) для устройств
+                        ниже. Эти действия будут выполнены при запуске
+                        сценария
+                    </p>
+                    <div class="add_devices">
+                        <a href="edit_devices_in_group.html" class="add">
+                            <svg class="add_svg" width="18" height="18" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 4C12.5523 4 13 4.44772 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44772 11.4477 4 12 4Z"
+                                    fill="#252020" />
+                            </svg>
+                            <span>Добавить устройства</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="device">
+                    <div class="device_content">
+                        <div class="turning_on_the_device">
+                            <div class="text_in_device_box">
+                                <p class="device_name">Гостиная</p>
+                                <p class="device_quantity">Устройств 12</p>
+                            </div>
+                            <div class="delete">
+                                <button class="device-delete__button">
+                                    <img src="pictures/SVG/delete.svg" alt="delete">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device_content">
+                        <div class="turning_on_the_device">
+                            <img src="pictures/Rectangle 41.jpg" alt="" class="device_img">
+                            <div class="text_in_device_box">
+                                <p class="device_name">Этаж 2</p>
+                                <p class="device_quantity">Гостиная</p>
+                            </div>
+                            <div class="delete">
+                                <button class="device-delete__button">
+                                    <img src="pictures/SVG/delete.svg" alt="delete">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device_content">
+                        <div class="turning_on_the_device">
+                            <div class="text_in_device_box">
+                                <p class="device_name">Гостиная</p>
+                                <p class="device_quantity">Устройств 12</p>
+                            </div>
+                            <div class="delete">
+                                <button class="device-delete__button">
+                                    <img src="pictures/SVG/delete.svg" alt="delete">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="device_content">
+                        <div class="turning_on_the_device">
+                            <img src="pictures/Rectangle 41.jpg" alt="" class="device_img">
+                            <div class="text_in_device_box">
+                                <p class="device_name">Этаж 2</p>
+                                <p class="device_quantity">Гостиная</p>
+                            </div>
+                            <div class="delete">
+                                <button class="device-delete__button">
+                                    <img src="pictures/SVG/delete.svg" alt="delete">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delete_all">
+                        <button class="delete_all_button">
+                            <img src="pictures/SVG/delete.svg" alt="delete" class="delete_btn_img">
+                            Удалить все устройства
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_button">
+                <button class="footer_button_size" type="submit">Создать</button>
+                <a class="footer_button_size button_cancellation" href="room.html">Отмена</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

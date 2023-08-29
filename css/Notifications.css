@@ -1,0 +1,237 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+  background: #F5F5F5;
+  min-width: 290px;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* position: absolute; */
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+main {
+  flex: 1 1 auto;
+  margin: 0 15px 0 15px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+                          /* header */
+.title-content {
+  text-align: center;
+}
+.header__container{
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 60px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.arrow_link {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+}
+.titel{
+  font-weight: 500;
+  white-space: nowrap;
+  font-size: 14px;
+  font-family: InterMedium;
+  line-height: 0px;
+  color: #252020;
+}
+.delete__form {
+  width: 24px;
+  height: 24px;
+  justify-self: end;
+  margin-right: 15px;
+}
+.delete__button {
+  height: 24px;
+  width: 24px;
+  border: none;
+  background: none;
+  background-image: url('../pictures/SVG/ic24-delete.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.title_content{
+  color: rgba(37, 32, 32, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+/*                     notifications-new/notifications-viewed                    */
+.notification_title {
+  font: 500 14px/1.71 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0px;
+  margin: 20px 0px 0px;
+}
+
+.list_notifications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 10px;
+  margin: 20px 0px 0px 0px;
+}
+
+.notification__block {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  padding: 10px;
+}
+
+.block_info {
+  display: flex;
+}
+
+.avatar {
+  background-color: #ffe7d3;
+  border-radius: 5px 5px 5px 5px;
+  width: 45px;
+  height: 45px;
+}
+
+.icon.layout {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  margin: 10px 11px 11px 10px;
+}
+
+.info_n {
+  margin-left: 20px;
+}
+
+.notification_name {
+  font: 500 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+}
+
+.notification_text {
+  font: 300 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}
+
+.notification_date {
+  font: 300 10px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #979797;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}
+
+.border-red {
+  border: 1px solid #FF6B80;
+}
+
+.border-green {
+  border: 1px solid #7CE994;
+}
+/*                  list_notifications                 */
+
+.n_date_s {
+  font: 500 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  margin: 20px 0 0 0px;
+}
+
+
+.list_notifications{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 10px;
+  margin: 20px 0 0px 0;
+}
+.block_noti_normal {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  padding: 10px;
+  transition: all .2s ease-out;
+}
+.block_noti_normal:hover {
+  background-color: #ffeedf;
+}
+.block_info {
+  display: flex;
+}
+.info_s{
+  margin-left: 0px;
+}
+.n_name {
+  font: 500 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+}
+.n_text {
+  font: 300 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}
+.n_date {
+  font: 300 10px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #979797;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}
+.text_n {
+  font: 500 14px/1.71 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0px;
+}
+
+
+
+
+
+
+
+
+
+

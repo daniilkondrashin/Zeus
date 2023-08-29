@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+    <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="./css/Zeus.css" />
+    <link rel="stylesheet" type="text/css" href="./css/blocks/notification-namder.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_mp">
+                <div class="header_mp_dropdown">
+                    <div class="dropbtn">
+                        <div class="object_list" id="ol">
+                            <div class="object_on">
+                                <img class="img_object" src="./assets/centr_mini_b.png" alt="" />
+                                <div class="text_body">Квартира</div>
+                                <span class="icon_list"><svg width="24" height="24" viewBox="0 0 24 24"
+                                        fill="currentColor;" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 9.60012C18 9.75371 17.9347 9.9073 17.8047 10.0243L12.4714 14.8241C12.2107 15.0586 11.7894 15.0586 11.5288 14.8241L6.1955 10.0243C5.93483 9.78971 5.93483 9.41053 6.1955 9.17594C6.45616 8.94135 6.87749 8.94135 7.13815 9.17594L12.0001 13.5515L16.862 9.17594C17.1227 8.94135 17.544 8.94135 17.8047 9.17594C17.9347 9.29294 18 9.44653 18 9.60012Z" />
+                                    </svg></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-content" id="dc">
+                        <a href="#">
+                            <div class="object_dropdown">
+                                <img class="img_object" src="./assets/centr_mini_w.png" alt="" />
+                                <div class="text_body">Медный завод</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="object_dropdown">
+                                <img class="img_object" src="./assets/centr_mini_b.png" alt="" />
+                                <div class="text_body">Дача</div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="object_dropdown">
+                                <img class="img_object" src="./assets/centr_mini_b.png" alt="" />
+                                <div class="text_body">Очень длинное название объекта</div>
+                            </div>
+                        </a>
+
+                        <a href="add_to_center.html">
+                            <div class="object_dropdown" style="padding: 8px 10px; border-top: 1px solid #ededed;">
+                                <div class="text_body">Добавить центр</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header_mp__button">
+                    <a href="add_a_device.html" class="main_add">
+                        <span class="plus"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor;"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 4C12.5523 4 13 4.44772 13 5V11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H13V19C13 19.5523 12.5523 20 12 20C11.4477 20 11 19.5523 11 19V13H5C4.44772 13 4 12.5523 4 12C4 11.4477 4.44772 11 5 11H11V5C11 4.44772 11.4477 4 12 4Z" />
+                            </svg>
+                        </span>
+                    </a>
+                    <a href="./notifications.html" class="notify">
+                        <span class="bell"><svg width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.99983 20C4.29557 20 3.82456 19.2979 4.05961 18.6586L4.1054 18.5528L5.26082 16.242C5.69821 15.3672 5.94689 14.4115 5.99225 13.4369L5.99983 13.1115V10C5.99983 7.02694 8.16221 4.55893 11 4.08293L10.9998 3C10.9998 2.44772 11.4475 2 11.9998 2C12.5521 2 12.9998 2.44772 12.9998 3L13.0006 4.08309C15.7591 4.54627 17.8792 6.89172 17.9949 9.75347L17.9998 10V13.1115C17.9998 14.0895 18.2048 15.0555 18.6 15.9474L18.7388 16.242L19.8943 18.5528C20.2092 19.1827 19.7918 19.918 19.115 19.9936L18.9998 20H13.9998C13.9998 21.1046 13.1044 22 11.9998 22C10.8953 22 9.99983 21.1046 9.99983 20H4.99983ZM11.9998 6C9.85763 6 8.10875 7.68397 8.00472 9.80036L7.99983 10V13.1115C7.99983 14.3922 7.72648 15.6569 7.19963 16.8213L7.04967 17.1364L6.61786 18H17.3818L16.95 17.1364C16.3772 15.9908 16.0561 14.7374 16.0066 13.4603L15.9998 13.1115V10C15.9998 7.79086 14.209 6 11.9998 6Z"
+                                    fill="#252020" />
+                            </svg>
+                        </span>
+                        <div class="bell_notify">5</div>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="center">
+                <a href="./center.html" class="center_block">
+                    <img class="img_center" src="./assets/centr_mini_b.png" alt="" />
+
+                    <div class="info_center">
+                        <div class="Name_center">Центр</div>
+                        <div class="Room_center">Комната</div>
+                        <div class="status_center">
+                            <img class="icon_center" src="./assets/ic24-battery-full.svg" alt="" />
+                            <img class="icon_center" src="./assets/ic24-globe.svg" alt="" />
+                        </div>
+                    </div>
+                </a>
+                <div class="block_center_notify">2</div>
+            </div>
+            <div id="device-container">
+                <div class="title">
+                    <a href="scenarios.html">
+                        <div class="text_title">Сценарии</div>
+                    </a>
+                    <img src="./assets/ic24-chevron-down.svg" alt="" />
+
+                </div>
+                <div class="scenarios">
+                    <div class="s_list">
+                        <div class="s_block" id="warning">
+                            <div class="s_info" id="warningIcon">
+                                <div class="s_ico">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="#FC6076"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M17.5711 3.03828C18.2512 3.37833 18.8026 3.92979 19.1427 4.60989L28.9614 24.2473C29.8294 25.9833 29.1257 28.0942 27.3898 28.9622C26.9018 29.2061 26.3637 29.3332 25.8182 29.3332H6.18073C4.23988 29.3332 2.6665 27.7598 2.6665 25.8189C2.6665 25.2734 2.79353 24.7353 3.03751 24.2473L12.8562 4.60989C13.7242 2.87394 15.8351 2.1703 17.5711 3.03828ZM14.9828 5.96189L5.4532 25.0211C5.37426 25.179 5.33317 25.3531 5.33317 25.5296C5.33317 26.1575 5.84219 26.6665 6.47009 26.6665H25.5293C25.7058 26.6665 25.8799 26.6254 26.0378 26.5465C26.5994 26.2657 26.827 25.5828 26.5462 25.0211L17.0166 5.96189C16.9066 5.74187 16.7282 5.56346 16.5082 5.45345C15.9465 5.17264 15.2636 5.40028 14.9828 5.96189ZM15.9998 21.3332C16.7362 21.3332 17.3332 21.9301 17.3332 22.6665C17.3332 23.4029 16.7362 23.9998 15.9998 23.9998C15.2635 23.9998 14.6665 23.4029 14.6665 22.6665C14.6665 21.9301 15.2635 21.3332 15.9998 21.3332ZM15.9998 10.6665C16.7362 10.6665 17.3332 11.2635 17.3332 11.9998V17.3332C17.3332 18.0695 16.7362 18.6665 15.9998 18.6665C15.2635 18.6665 14.6665 18.0695 14.6665 17.3332V11.9998C14.6665 11.2635 15.2635 10.6665 15.9998 10.6665Z" />
+                                    </svg>
+                                    <img src="./assets/ic24-check (1).svg" alt="Icon" class="icon_confirmation">
+                                </div>
+                                <div class="s_text">Тревога</div>
+                                <div class="s_text_confirmation">Подтвердите</div>
+                            </div>
+                            <div class="animation_button">
+                                <img src="./assets/anim.svg" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="s_block" id="put_on_guard">
+                            <div class="s_info">
+                                <div class="s_ico">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 32 32" fill="#FF9A44"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.6747 9.48074L3.43791 16.3496C3.84303 19.9956 5.89366 23.2561 9.00453 25.2004L15.2932 29.1308C15.7256 29.4011 16.2742 29.4011 16.7065 29.1308L22.9952 25.2004C26.1061 23.2561 28.1567 19.9956 28.5619 16.3496L29.3251 9.48074C29.3892 8.90336 29.0722 8.3509 28.5413 8.11502L16.5413 2.78331C16.1966 2.63017 15.8032 2.63017 15.4585 2.78331L3.4585 8.11502C2.92761 8.3509 2.61055 8.90336 2.6747 9.48074ZM5.43279 10.1559L15.9999 5.46081L26.567 10.1559L25.9115 16.0551C25.5964 18.8909 24.0015 21.4268 21.5819 22.9391L15.9999 26.4278L10.4179 22.9391C7.99829 21.4268 6.40336 18.8909 6.08827 16.0551L5.43279 10.1559Z" />
+                                    </svg>
+                                    <img src="./assets/ic24-check (1).svg" alt="Icon" class="icon_confirmation">
+                                </div>
+                                <div class="s_text">Охрана</div>
+                                <div class="s_text_confirmation">Подтвердите</div>
+                            </div>
+                            <div class="animation_button">
+                                <img src="./assets/anim.svg" alt="Icon">
+                            </div>
+                        </div>
+                        <div class="s_block" id="sleep">
+                            <div class="s_info">
+                                <div class="s_ico">
+                                    <svg class="icon" width="32" height="32" viewBox="0 0 24 24" fill="#FF9A44"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.3259 3.01387C10.3428 3.10656 9.45793 3.31162 8.65736 3.63185C6.6152 4.44647 4.9326 5.98862 3.94383 7.95212C3.51405 8.80606 3.1882 9.8791 3.05056 10.8875C2.98315 11.3791 2.98315 12.6151 3.05056 13.1067C3.37641 15.5056 4.53091 17.5561 6.3961 19.0534C7.29218 19.7725 8.37084 20.3286 9.44388 20.6292C10.4186 20.9017 11.09 21 12.0029 21C14.5422 21 17.0001 19.8989 18.6827 18.0084C19.6799 16.8904 20.3316 15.6657 20.7109 14.2022C20.8316 13.7415 20.8373 13.6263 20.7446 13.469C20.6266 13.2696 20.2839 13.2415 20.135 13.4185C20.0957 13.4662 20.017 13.587 19.958 13.6909C19.0311 15.3567 17.4608 16.573 15.6518 17.0224C15.0057 17.1854 14.7052 17.2191 13.9804 17.2219C13.2894 17.2219 12.9804 17.1882 12.3934 17.0505C10.736 16.6629 9.24164 15.6179 8.28095 14.1741C7.82589 13.4943 7.46353 12.6432 7.2978 11.8707C7.05341 10.7387 7.10397 9.42404 7.43263 8.38752C7.5169 8.12628 7.73319 7.59256 7.85679 7.34818C8.71354 5.64592 10.1883 4.40433 12.0254 3.83691C12.3484 3.73578 12.4299 3.6768 12.4748 3.50825C12.5366 3.28634 12.4046 3.07847 12.1686 3.0251C12.0507 2.99701 11.5535 2.9914 11.3259 3.01387Z" />
+                                    </svg>
+                                    <img src="./assets/ic24-check (1).svg" alt="Icon" class="icon_confirmation">
+                                </div>
+                                <div class="s_text">Сплю</div>
+                                <div class="s_text_confirmation">Подтвердите</div>
+                            </div>
+                            <div class="animation_button">
+                                <img src="./assets/anim.svg" alt="Icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="./device list.html">
+                        <div class="text_title">Устройства (5)</div>
+                    </a>
+                </div>
+                <div class="list_devices_mp">
+                    <a class="device__container" href="./DoorProtectPlus.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">DoorProtectPlus</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img src="./assets/DoorProtectPlus_mini.png" alt="icon" class="device__icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="device__container device__container_connection-error">
+                        <a href="./MultiTransmitter.html">
+                            <div class="device_text__container">
+                                <h1 class="device__title">MultiTransmitter</h1>
+                                <h2 class="device__subtitle">Гостиная</h2>
+                            </div>
+                            <div class="device__icon__container many__device">
+                                <img class="device__icon" src="pictures/MultiTransmitter.jpg" alt="icon" height="50px"
+                                    width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                                <div class="device__icon_end">
+                                    <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                            fill="#FF9A44"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                            fill="#FF9A44"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                            fill="#FF9A44"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                            fill="#FF9A44"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./MultiTransmitter_device_list.html">
+                            <div class="device_nam">
+                                Устройств 10
+                                <img src="pictures/SVG/ic24-chevron-down.svg" alt="" class="name_rooms__icon">
+                            </div>
+                        </a>
+                    </div>
+                    <a class="device__container" href="./SpaceControl.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">SpaceControl</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img class="device__icon" src="./assets/SpaceControl.png" alt="icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="device__container device__container_connection-error" href="./HomeSiren.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">HomeSiren</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img src="./assets/HomeSiren_mini.png" alt="icon" class="device__icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="device__container" href="./MotionProtect.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">MotionProtect</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img src="./assets/MotionProtect_mini.png" alt="icon" class="device__icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="device__container" href="./CombiProtect.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">CombiProtect</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img src="./assets/MotionProtect_mini.png" alt="icon" class="device__icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="device__container" href="./FireProtect.html">
+                        <div class="device_text__container">
+                            <h1 class="device__title">FireProtect</h1>
+                            <h2 class="device__subtitle">Гостиная</h2>
+                        </div>
+                        <div class="device__icon__container">
+                            <img src="./assets/FireProtect_mini.png" alt="icon" class="device__icon" height="50px"
+                                width="50px">
+                                <span class="connection-error__span">
+                                    Не в сети
+                                </span>
+                            <div class="device__icon_end">
+                                <img src="pictures/SVG/ic24-battery-full.svg" alt="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="#FF9A44"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M6 22C5.44772 22 5 21.5523 5 21V15C5 14.4477 5.44772 14 6 14C6.55228 14 7 14.4477 7 15V21C7 21.5523 6.55228 22 6 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M10 22C9.44772 22 9 21.5523 9 21V11C9 10.4477 9.44772 10 10 10C10.5523 10 11 10.4477 11 11V21C11 21.5523 10.5523 22 10 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M14 22C13.4477 22 13 21.5523 13 21L13 7C13 6.44771 13.4477 6 14 6C14.5523 6 15 6.44771 15 7V21C15 21.5523 14.5523 22 14 22Z"
+                                        fill="#FF9A44"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M18 22C17.4477 22 17 21.5523 17 21V3C17 2.44772 17.4477 2 18 2C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22Z"
+                                        fill="#FF9A44"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="devices-none">
+                <div class="titel devices-none__titel">Сценарии</div>
+                <div class="subtitel devices-none__subtitel">Сценарии недоступны,Добавьте устройства</div>
+                <div class="add_devices">
+                    <a href="add_devices.html" class="add-devices__button">
+                        <svg class="img_add" width="18" height="18" viewBox="0 0 18 18"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9 2.99988C9.41421 2.99988 9.75 3.33566 9.75 3.74988V8.24988H14.25C14.6642 8.24988 15 8.58566 15 8.99988C15 9.41409 14.6642 9.74988 14.25 9.74988H9.75V14.2499C9.75 14.6641 9.41421 14.9999 9 14.9999C8.58579 14.9999 8.25 14.6641 8.25 14.2499V9.74988H3.75C3.33579 9.74988 3 9.41409 3 8.99988C3 8.58566 3.33579 8.24988 3.75 8.24988H8.25V3.74988C8.25 3.33566 8.58579 2.99988 9 2.99988Z"
+                                fill="#252020" />
+                        </svg>
+                        Добавить устройства
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="menu">
+                <div class="menu_items">
+                    <a href="Zeus.html">
+                        <div class="mitem">
+                            <div class="item">
+                                <div class="menu_icon_color">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                        fill="#FF9A44">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M13 2C14.5977 2 15.9037 3.24892 15.9949 4.82373L16 5V8H19C20.5977 8 21.9037 9.24892 21.9949 10.8237L22 11V19C22 20.5977 20.7511 21.9037 19.1763 21.9949L19 22H11C9.40232 22 8.09634 20.7511 8.00509 19.1763L8 19V16H5C3.40232 16 2.09634 14.7511 2.00509 13.1763L2 13V5C2 3.40232 3.24892 2.09634 4.82373 2.00509L5 2H13ZM19 10H16V13C16 14.5977 14.7511 15.9037 13.1763 15.9949L13 16H10V19C10 19.5128 10.386 19.9355 10.8834 19.9933L11 20H19C19.5128 20 19.9355 19.614 19.9933 19.1166L20 19V11C20 10.4872 19.614 10.0645 19.1166 10.0067L19 10ZM13 4H5C4.48716 4 4.06449 4.38604 4.00673 4.88338L4 5V13C4 13.5128 4.38604 13.9355 4.88338 13.9933L5 14H8V11C8 9.40232 9.24892 8.09634 10.8237 8.00509L11 8H14V5C14 4.48716 13.614 4.06449 13.1166 4.00673L13 4ZM14 10H11C10.4872 10 10.0645 10.386 10.0067 10.8834L10 11V14H13C13.5128 14 13.9355 13.614 13.9933 13.1166L14 13V10Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="m_text">Устройства</div>
+                        </div>
+                    </a>
+                    <a href="room.html">
+                        <div class="mitem">
+                            <div class="item">
+                                <div class="menu_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M19 2C20.5977 2 21.9037 3.24892 21.9949 4.82373L22 5V19C22 20.5977 20.7511 21.9037 19.1763 21.9949L19 22H5C3.40232 22 2.09634 20.7511 2.00509 19.1763L2 19V5C2 3.40232 3.24892 2.09634 4.82373 2.00509L5 2H19ZM11 4H5C4.48716 4 4.06449 4.49634 4.00673 5.13577L4 5.28571V11H5C5.55228 11 6 11.4477 6 12C6 12.5523 5.55228 13 5 13H4V19C4 19.5128 4.49634 19.9355 5.13577 19.9933L5.28571 20H11V19C11 18.4477 11.4477 18 12 18C12.5523 18 13 18.4477 13 19V20H19C19.5128 20 19.9355 19.614 19.9933 19.1166L20 19V13H19C18.4477 13 18 12.5523 18 12C18 11.4477 18.4477 11 19 11H20V5.28571C20 4.62635 19.5037 4.08292 18.8642 4.00865L18.7143 4H13V5C13 5.55228 12.5523 6 12 6C11.4477 6 11 5.55228 11 5V4ZM12 9C12.5128 9 12.9355 9.38604 12.9933 9.88338L13 10V11H14C14.5523 11 15 11.4477 15 12C15 12.5128 14.614 12.9355 14.1166 12.9933L14 13H13V14C13 14.5523 12.5523 15 12 15C11.4872 15 11.0645 14.614 11.0067 14.1166L11 14V13H10C9.44772 13 9 12.5523 9 12C9 11.4872 9.38604 11.0645 9.88338 11.0067L10 11H11V10C11 9.44772 11.4477 9 12 9Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="m_text">Помещения</div>
+                        </div>
+                    </a>
+                    <a href="scenarios.html">
+                        <div class="col">
+                            <div class="item">
+                                <div class="menu_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4 18C5.10457 18 6 18.8954 6 20C6 21.1046 5.10457 22 4 22C2.89543 22 2 21.1046 2 20C2 18.8954 2.89543 18 4 18ZM12 18C13.1046 18 14 18.8954 14 20C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20C10 18.8954 10.8954 18 12 18ZM20 18C21.1046 18 22 18.8954 22 20C22 21.1046 21.1046 22 20 22C18.8954 22 18 21.1046 18 20C18 18.8954 18.8954 18 20 18ZM4 10C5.10457 10 6 10.8954 6 12C6 13.1046 5.10457 14 4 14C2.89543 14 2 13.1046 2 12C2 10.8954 2.89543 10 4 10ZM12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12C10 10.8954 10.8954 10 12 10ZM20 10C21.1046 10 22 10.8954 22 12C22 13.1046 21.1046 14 20 14C18.8954 14 18 13.1046 18 12C18 10.8954 18.8954 10 20 10ZM4 2C5.10457 2 6 2.89543 6 4C6 5.10457 5.10457 6 4 6C2.89543 6 2 5.10457 2 4C2 2.89543 2.89543 2 4 2ZM12 2C13.1046 2 14 2.89543 14 4C14 5.10457 13.1046 6 12 6C10.8954 6 10 5.10457 10 4C10 2.89543 10.8954 2 12 2ZM20 2C21.1046 2 22 2.89543 22 4C22 5.10457 21.1046 6 20 6C18.8954 6 18 5.10457 18 4C18 2.89543 18.8954 2 20 2Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="m_text">Сценарии</div>
+                        </div>
+                    </a>
+                    <a href="./setting.html">
+                        <div class="mitem">
+                            <div class="item">
+                                <div class="menu_icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.8976 2.00206L13.0201 2.00195C13.0843 2.00493 13.1406 2.01227 13.2197 2.0295C13.8002 2.1559 14.0209 2.36432 14.5611 3.6408L14.6491 3.85137L14.9886 4.69255L15.0165 4.70402L15.4539 4.50602C16.4066 4.08002 16.8976 3.90058 17.2278 3.85052L17.2962 3.84173L17.4209 3.835C17.7182 3.835 18.021 3.94031 18.2528 4.12366L18.3624 4.22171L19.7193 5.57302L19.8137 5.67271C20.2399 6.14224 20.2797 6.47511 19.8082 7.68829L19.6513 8.07967L19.2815 8.95464L19.2886 8.97172L20.1357 9.28806L20.5441 9.44947C21.599 9.88078 21.8158 10.1107 21.9568 10.6387C21.9852 10.7452 21.9953 10.8177 21.9986 10.9078L22 11.0055V12.9133C22 13.0489 21.9954 13.1255 21.962 13.2595C21.8216 13.8232 21.6132 14.0379 20.3455 14.5734L20.1363 14.6607L19.301 14.9978L19.2952 15.0119L19.5972 15.6718C20.3484 17.3413 20.3746 17.7073 19.8809 18.2571L19.8192 18.324L18.4263 19.7159C18.1769 19.968 17.8217 20.1067 17.4779 20.1067C17.186 20.1067 16.7275 19.968 15.9459 19.6545L15.5275 19.4831L15.0509 19.2816L15.0236 19.2929L14.7773 19.9533C14.1744 21.5419 13.9678 21.7998 13.3484 21.9597C13.2569 21.9833 13.1914 21.9934 13.1171 21.9975L12.9945 22.0001H11.0856C10.9665 22.0001 10.8993 21.9965 10.7809 21.9708C10.2007 21.845 9.97914 21.6362 9.43788 20.3589L9.34966 20.1482L9.0096 19.3066L8.98344 19.2958L8.34815 19.5814C7.332 20.0287 6.89179 20.1649 6.57806 20.1649C6.28426 20.1649 5.98508 20.0616 5.74708 19.8766L5.63349 19.7773L4.27843 18.424L4.12369 18.2552C3.75208 17.818 3.73381 17.4789 4.18994 16.3119L4.42762 15.7278L4.71777 15.0457L4.71172 15.0311L4.05484 14.7863C2.73708 14.2862 2.33098 14.0559 2.138 13.6354L2.0858 13.5031L2.0422 13.3566C2.01752 13.263 2.00699 13.1959 2.00272 13.1195L2 12.9936V11.0847C2 10.9481 2.00474 10.8708 2.03877 10.7356C2.16566 10.2316 2.34576 10.0078 3.29447 9.58267L3.68766 9.41288L4.69733 9.00457L4.70425 8.98776L4.32674 8.15484C3.70383 6.73997 3.65224 6.30918 4.04525 5.82802L4.09903 5.7649L4.22636 5.62993L5.57616 4.28319C5.82346 4.03452 6.1772 3.89433 6.5215 3.89433C6.76776 3.89433 7.12934 3.99177 7.70805 4.21096L8.29026 4.44176L8.95028 4.71838L8.97734 4.70713L9.22549 4.04231C9.83405 2.44232 10.0513 2.17475 10.6932 2.03105C10.7742 2.01292 10.8319 2.00519 10.8976 2.00206ZM12.523 4.00006H11.4081L11.2509 4.36859C11.1912 4.5151 11.1238 4.68623 11.0478 4.88487L10.6993 5.817C10.6157 6.03768 10.4574 6.22046 10.2538 6.33479L10.1483 6.3861L9.3292 6.72696C9.1224 6.81301 8.89398 6.82667 8.6804 6.76806L8.55432 6.72422L7.58525 6.31575L7.06181 6.10701L6.70998 5.97716L5.91977 6.76558L6.01277 7.00048C6.04911 7.08896 6.09094 7.18788 6.13863 7.29809L6.2997 7.66336L6.70366 8.54646C6.80042 8.75676 6.82065 8.9927 6.76353 9.21417L6.71997 9.34499L6.38503 10.1589C6.29635 10.3744 6.13575 10.551 5.93242 10.6599L5.82733 10.7086L4.73976 11.1457L4.19609 11.3788L4 11.4696V12.5997L4.23463 12.7015C4.32346 12.7386 4.42321 12.7791 4.53477 12.8233L4.90579 12.9673L5.80732 13.3021C6.03461 13.384 6.22321 13.5449 6.34018 13.7533L6.39255 13.8613L6.72754 14.6728C6.81356 14.8812 6.82615 15.1112 6.76566 15.3258L6.7206 15.4523L6.33182 16.3646L6.088 16.9665L5.96921 17.286L6.75948 18.0753L6.99479 17.9823C7.08146 17.947 7.17645 17.9073 7.28 17.8632L8.00585 17.5431L8.5293 17.3021C8.74835 17.1975 8.99663 17.1766 9.22796 17.2409L9.342 17.2801L10.1659 17.6203C10.3843 17.7104 10.5625 17.8744 10.6707 18.0817L10.7189 18.1888L10.9239 18.7061L11.2157 19.4157L11.3846 19.8035L11.4762 20.0001H12.5944L12.7541 19.6236L12.9621 19.0925L13.3007 18.1844C13.3843 17.9618 13.5438 17.7775 13.7492 17.6627L13.8556 17.6113L14.676 17.2727C14.8804 17.1883 15.1058 17.1746 15.317 17.2313L15.4417 17.2738L16.2143 17.6015L16.7781 17.8312L17.0867 17.9502L17.2903 18.0239L18.0815 17.2341L17.929 16.8579L17.7004 16.3363L17.2956 15.454C17.1985 15.2433 17.1782 15.0068 17.2356 14.785L17.2793 14.6539L17.6137 13.8435C17.7019 13.6297 17.861 13.4542 18.0624 13.3453L18.1665 13.2965L19.0876 12.9262L19.5578 12.7291L19.6871 12.6729L20 12.5297V11.4007L19.6863 11.2668L19.2615 11.0987L18.1891 10.6995C17.9623 10.6169 17.7744 10.4558 17.658 10.2474L17.6059 10.1394L17.2715 9.32458C17.1862 9.1167 17.1738 8.88745 17.2341 8.67361L17.279 8.54746L17.5895 7.82156C17.6703 7.6296 17.7406 7.45937 17.8014 7.30892L17.9103 7.03378L18.029 6.71227L17.2384 5.92488L17.0029 6.01804C16.8727 6.07114 16.7235 6.13416 16.5542 6.20775L16.3782 6.28489L15.4554 6.70346C15.2454 6.79966 15.0101 6.81967 14.7891 6.7627L14.6586 6.71927L13.8352 6.3808C13.6196 6.2922 13.443 6.13165 13.334 5.92835L13.2853 5.82327L12.9942 5.09488L12.7832 4.58459L12.6663 4.31319L12.523 4.00006ZM12.0005 8.00006C14.2066 8.00006 16 9.79308 16 11.9992C16 14.2054 14.2065 16.0001 12.0005 16.0001C9.79382 16.0001 8 14.2058 8 11.9992C8 9.79276 9.79369 8.00006 12.0005 8.00006ZM12.0005 10.0001C10.898 10.0001 10 10.8976 10 11.9992C10 13.1013 10.8985 14.0001 12.0005 14.0001C13.1016 14.0001 14 13.1012 14 11.9992C14 10.8977 13.1021 10.0001 12.0005 10.0001Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="m_text">Настройки</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </div>
+    </footer>
+    <script>
+        $('#ol').click(function (e) {
+            var $message = $('#dc');
+
+            if ($message.css('display') != 'block') {
+                $message.show();
+                e.preventDefault();
+                $(this).find('span.icon_list').toggleClass('active');
+
+                var firstClick = true;
+                $(document).bind('click.myEvent', function (e) {
+                    if (!firstClick && $(e.target).closest('#dc').length == 0) {
+                        $message.hide();
+                        $(document).unbind('click.myEvent');
+                        $(this).find('span.icon_list').toggleClass('active');
+
+                    }
+                    firstClick = false;
+                });
+            }
+
+            e.preventDefault();
+        });
+
+    </script>
+
+    <script type="text/javascript" src="./scripts/scenario_selection.js"></script>
+</body>
+
+</html>

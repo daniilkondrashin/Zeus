@@ -1,0 +1,51 @@
+.title-content {
+    text-align: center;
+}
+.header__container{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    border-bottom: 1px solid #E1E1E1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.arrow_link {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+}
+.header_menu_titel{
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 14px;
+    font-family: InterMedium;
+    line-height: 0px;
+    color: #252020;
+}
+.delete__form {
+    width: 24px;
+    height: 24px;
+    justify-self: end;
+    margin-right: 15px;
+}
+.delete__button {
+    height: 24px;
+    width: 24px;
+    border: none;
+    background: none;
+    /* background-image: url('../pictures/SVG/ic24-delete.svg'); */
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.title_content{
+    color: rgba(37, 32, 32, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}

@@ -1,0 +1,116 @@
+
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    height: 100%;
+    background: #F5F5F5;
+    min-width: 290px;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+main {
+    flex: 1 1 auto;
+    margin: 0 15px 0 15px;
+}
+
+.footer {
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+                            /* main */
+/*                          icons_grid                               */
+.icons_grid {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 20px;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fit, minmax(65px, auto));
+    justify-content: center;
+}
+@media (max-width: 319px) {
+    .icons_grid {
+        grid-template-columns: repeat(auto-fit, minmax(65px, auto));
+    }
+}
+.icon_container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    height: 60px;
+}
+
+.icon_container > .icon_size {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.icon_container label {
+    display: flex;
+    width: 65px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.icon {
+    height: 30px;
+    width: 30px;
+    transition: all .2s ease-out;
+}
+.icon-check {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s ease-out;
+}
+.icon_container > .icon_size:checked + label {
+    background: rgba(217, 217, 217, 0.45);
+}
+.icon_container > .icon_size:checked + label .icon {
+    opacity: 0.4;
+}
+.icon_container > .icon_size:checked + label .icon-check {
+    opacity: 1;
+    visibility: visible;
+}
+.icon_container label:hover {
+    border: 1px solid #FFB779;
+}
+
+
+

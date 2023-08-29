@@ -1,0 +1,229 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+@font-face { 
+    font-family: "InterRegular";
+    src: url("../fonts/InterRegular/InterRegular.eot");
+    src: url("../fonts/InterRegular/InterRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/InterRegular/InterRegular.woff") format("woff"),
+    url("../fonts/InterRegular/InterRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "InterSemiBold";
+    src: url("../fonts/InterSemiBold/InterSemiBold.eot");
+    src: url("../fonts/InterSemiBold/InterSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/InterSemiBold/InterSemiBold.woff") format("woff"),
+    url("../fonts/InterSemiBold/InterSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: "InterMedium";
+    src: url(../fonts/InterMedium/Inter-Medium.ttf);
+}
+html {
+	height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+	line-height: 1;
+    height: 100vh;
+    background-color: #F5F5F5;
+    min-width: 290px;
+    font-family: InterRegular;
+    color: #252020;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    background-image: url("../pictures/Vector.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;  
+    background-position: center 75%;   
+}
+@media (max-width: 650px) {
+    body {
+        background-size: cover;
+    }
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+.wrapper{
+    min-height: 100%;
+    display: grid;
+    overflow: auto;
+    grid-template-rows: 275px 1fr 130px;
+    margin: 0 15px 0 15px;
+}
+.header{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    justify-items: center;
+    align-items: center;
+}
+.main{
+}
+.footer {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.form__input {
+    margin-top: 20px;
+}
+.titel {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.label-input {
+    margin-bottom: 5px;
+}
+.input {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    height: 35px;
+    transition: all .2s ease-out;
+    padding-left: 10px;
+}
+.input-container:not(:last-child) {
+    margin-bottom: 16px;
+}
+.input:focus {
+    border: 1px solid #FFB779;
+    outline: 0;
+}
+.input:active {
+    border: 1px solid #FFB779;
+    outline: 0;
+}
+.input::placeholder {
+    color: #909295;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+.input--error {
+    border: 1px solid #FC6076;
+}
+.password_verification__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10px;
+}
+.password_error, .change_password {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+}
+.password_error {
+    white-space: nowrap;
+    padding-right: 10px;
+    color: #FC6076;
+    display: none;
+}
+.password_error--visible {
+    display: block;
+}
+.change_password {
+    white-space: nowrap;
+    border: none;
+    transition: all .2s ease-out;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: end;
+}
+/* .change_password:focus {
+    outline: 1px solid #FFB779;
+    border-radius: 5px;
+} */
+.change_password:active {
+    outline: 0;
+}
+@media (max-width: 300px) {
+    .password_arror {
+        white-space: normal;
+        line-height: 18px;
+    }
+    .change_password {
+        white-space: normal;
+        text-align: end;
+        line-height: 18px;
+    }
+}
+.footer_form {
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+}
+.footer__button {
+    flex: 1;
+    background: #FF9A44;
+    border: 1px solid #E1E1E1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer__text__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.footer__text {
+    height: 22px;
+    border: none;
+    transition: all .2s ease-out
+}
+/* .footer__text:focus {
+    border: 1px solid #FFB779;
+    outline: 0;
+    border-radius: 5px;
+} */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add_to_center.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/blocks/buttons.css" />
+    <title>add to center</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="arrow_link" href="Zeus.html">
+                    <svg class="arrow" width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.00001 18.0002C8.74401 18.0002 8.48801 17.9023 8.29301 17.7073L0.293006 9.70725C-0.0979941 9.31625 -0.0979941 8.68425 0.293006 8.29325L8.29301 0.29325C8.68401 -0.09775 9.31601 -0.09775 9.70701 0.29325C10.098 0.68425 10.098 1.31625 9.70701 1.70725L2.41401 9.00025L9.70701 16.2932C10.098 16.6842 10.098 17.3162 9.70701 17.7073C9.51201 17.9023 9.25601 18.0002 9.00001 18.0002Z" fill="#FF9A44"/>
+                    </svg>   
+                </a>
+                <div class="title-content">
+                    <span class="titel">Добавить центр</span>
+                </div>
+                <form class="delete__form" method="post" enctype="#">
+                    <a class="delete__button"></a>
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="content_form">
+                <form method="post" enctype="#">
+                    <fieldset>
+                        
+                        <label>Название</label>
+                        <div class="form_name">    
+                            <input class="name" type="text" name="name" placeholder="Центр">
+                        </div>
+                            <p class="paragraph">Понятное имя устройства поможет вам отлечить его от других в списке устройств</p>
+                        <div class="form_id">
+                        <label>ID устройства</label>
+                        <div class="ID_device_form">
+                            <input class="ID_device" type="text" name="ID_device" placeholder="234j6q" maxlength="11">
+                                <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                                <label for="input__file" class="input__file-button">
+                                    <samp class="ID_device_QR">
+                                        <svg class="qr_img" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.14286 0C0.967812 0 0 0.967812 0 2.14286V5C0 6.17505 0.967812 7.14286 2.14286 7.14286H2.85714V8.57143H4.28571V7.14286H5C6.17505 7.14286 7.14286 6.17505 7.14286 5V2.14286C7.14286 0.967812 6.17505 0 5 0H2.14286ZM4.28571 8.57143V10H5.71429V8.57143H4.28571ZM4.28571 10H2.85714V11.4286H4.28571V10ZM2.85714 10V8.57143H1.42857V10H2.85714ZM15 0C13.825 0 12.8571 0.967812 12.8571 2.14286V5C12.8571 6.17505 13.825 7.14286 15 7.14286H15.7143V8.57143H17.1429V7.14286H17.8571C19.0322 7.14286 20 6.17505 20 5V2.14286C20 0.967812 19.0322 0 17.8571 0H15ZM17.1429 8.57143V10H18.5714V8.57143H17.1429ZM17.1429 10H15.7143V11.4286H17.1429V10ZM17.1429 11.4286V12.8571H18.5714V11.4286H17.1429ZM17.1429 12.8571H15.7143V14.2857H17.1429V12.8571ZM15.7143 12.8571V11.4286H14.2857V12.8571H15.7143ZM2.14286 1.42857H5C5.4021 1.42857 5.71429 1.74076 5.71429 2.14286V5C5.71429 5.4021 5.4021 5.71429 5 5.71429H2.14286C1.74076 5.71429 1.42857 5.4021 1.42857 5V2.14286C1.42857 1.74076 1.74076 1.42857 2.14286 1.42857ZM10 1.42857V2.85714H8.57143V4.28571H10V5.71429H11.4286V1.42857H10ZM15 1.42857H17.8571C18.2592 1.42857 18.5714 1.74076 18.5714 2.14286V5C18.5714 5.4021 18.2592 5.71429 17.8571 5.71429H15C14.5979 5.71429 14.2857 5.4021 14.2857 5V2.14286C14.2857 1.74076 14.5979 1.42857 15 1.42857ZM2.85714 2.85714V4.28571H4.28571V2.85714H2.85714ZM15.7143 2.85714V4.28571H17.1429V2.85714H15.7143ZM7.14286 7.14286V8.57143H11.4286V10H12.8571V8.57143V7.14286H7.14286ZM8.57143 10V11.4286H7.14286V12.8571H12.8571V11.4286H10V10H8.57143ZM2.14286 12.8571C0.967812 12.8571 0 13.825 0 15V17.8571C0 19.0322 0.967812 20 2.14286 20H5C6.17505 20 7.14286 19.0322 7.14286 17.8571V15C7.14286 13.825 6.17505 12.8571 5 12.8571H2.14286ZM2.14286 14.2857H5C5.4021 14.2857 5.71429 14.5979 5.71429 15V17.8571C5.71429 18.2592 5.4021 18.5714 5 18.5714H2.14286C1.74076 18.5714 1.42857 18.2592 1.42857 17.8571V15C1.42857 14.5979 1.74076 14.2857 2.14286 14.2857ZM8.57143 14.2857V18.5714H10V14.2857H8.57143ZM2.85714 15.7143V17.1429H4.28571V15.7143H2.85714ZM12.8571 15.7143V17.1429H14.2857V15.7143H12.8571ZM14.2857 17.1429V18.5714H15.7143V17.1429H14.2857ZM15.7143 17.1429H17.1429V15.7143H15.7143V17.1429ZM17.1429 17.1429V18.5714H18.5714V17.1429H17.1429Z" fill="#252020"/>
+                                        </svg> 
+                                    </samp>
+                                </label>
+                        </div>
+                        <p class="paragraph">6,9 или 11 символов</p>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_button">
+                <a href="add_an_object.html" class="footer_button_size">Далее</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

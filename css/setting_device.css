@@ -1,0 +1,268 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+  background: #F5F5F5;
+  min-width: 290px;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* position: absolute; */
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+main {
+  flex: 1 1 auto;
+  margin: 0 15px 0 15px;
+}
+
+.footer {
+  width: 100%;
+}
+
+.content_form {
+  margin-top: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.name {
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-grow: 4;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 10px;
+  transition: all .2s ease-out;
+}
+
+.name:focus {
+  outline: 0;
+  border: 1px solid #FFB779;
+}
+
+.name:active {
+  border: 1px solid #FFB779;
+  outline: 0;
+}
+
+.paragraph {
+  font-size: 10px;
+  line-height: 12px;
+  font-style: normal;
+  margin-bottom: 15px;
+  font-family: InterRegular;
+}
+
+.ID_device_form {
+  margin-top: 5px;
+  display: flex;
+}
+
+.ID_device {
+  background: #FFFFFF;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  flex-grow: 4;
+  height: 35px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 10px;
+  transition: all .2s ease-out;
+}
+
+.ID_device:focus {
+  outline: 0;
+  border: 1px solid #FFB779;
+}
+
+.ID_device:active {
+  border: 1px solid #FFB779;
+  outline: 0;
+}
+
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-button {
+  width: 40px;
+  height: 36px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 1px solid #E1E1E1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.qr_img {
+  height: 25px;
+  width: 25px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+/*                      ListItem                    */
+.ListItem {
+  display: flex;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  min-width: 290px;
+  margin: 10px 0px 0px;
+  height: 50px;
+  transition: all .2s ease-out;
+}
+
+.ListItem:hover {
+  outline: 0;
+  background-color: #ffeedf;
+}
+
+.ListItem>.item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  fill: #FF9A44;
+  margin: 0 20px 0 10px;
+}
+.ListItem>.arrow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  fill: #252020;
+  margin: 0 1px 0 10px;
+  width: 24px;
+  margin-left: auto;
+}
+.switch {
+  position: relative;
+}
+/*                  ListlittleItem                   */
+.ListlittleItem {
+  display: flex;
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  min-width: 290px;
+  margin: 0 0px 15px;
+  padding: 0 10px 0;
+  height: 44px;
+  transition: all .2s ease-out;
+}
+
+.ListlittleItem:hover {
+  background-color: #ffeedf;
+}
+
+.ListlittleItem>.switch {
+  display: flex;
+  align-items: center;
+  position: relative;
+  fill: #252020;
+  margin: 0 0 0 10px;
+  margin-left: auto;
+}
+.ListlittleItem>.arrow {
+  display: flex;
+  align-items: center;
+  position: relative;
+  fill: #252020;
+  margin: 0 0 0 10px;
+  margin-left: auto;
+}
+.ListItem_text {
+  font: 400 14px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 165px;
+  display: flex;
+  align-items: center;
+}
+
+/*                switch_size                  */
+.switch {
+  position: relative;
+}
+
+.switch_size {
+  position: relative;
+  -webkit-appearance: none;
+  outline: none;
+  background: #F9F9F9;
+  border-radius: 10px;
+  height: 15px;
+  width: 30px;
+  border: 1px solid #D6D6D6;
+  cursor: pointer;
+}
+
+.switch_size:checked {
+  border: 1px solid #FF9A44;
+}
+
+.switch_size::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 13.5px;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  background: #D6D6D6;
+  transition: .5s;
+  transform: scale(1.1);
+}
+
+.switch_size:checked:before {
+  left: 15px;
+  background: #FF9A44;
+}
+
+
+

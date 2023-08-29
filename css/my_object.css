@@ -1,0 +1,228 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    height: 100%;
+    background: #F5F5F5;
+    min-width: 290px;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    /* position: absolute; */
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.main {
+    flex: 1 1 auto;
+    margin: 0 15px 0 15px;
+}
+
+.footer {
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/*                              myobj_btn                                */
+.myobj_btn {
+    display: flex;
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    min-width: 290px;
+    margin: 10px 0px 0px;
+    height: 90px;
+    transition: all .2s ease-out;
+}
+
+.myobj_btn:hover {
+    background-color: #ffeedf;
+}
+
+.myobj_btn>.item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    fill: #FF9A44;
+    margin: 0 20px 0 10px;
+}
+
+.myobj_btn>.edit {
+    display: flex;
+    /* padding: 10px; */
+    /* position: relative; */
+    /* fill: #252020; */
+    margin: 10px 10px 0 10px;
+    margin-left: auto;
+    height: 36px;
+    width: 36px;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-out;
+}
+.edit:hover{
+    fill: #FF9A44; 
+}
+.myobj_btn_a {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.img_myobj {
+    height: 90px;
+    width: 90px;
+}
+
+.image_myobj {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: -1px;
+    border: 1px solid #E1E1E1;
+    background-color: #EBEBEB;
+}
+
+.myobj_text {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: column;
+    font: 500 14px/1.2 "Inter", Helvetica, Arial, serif;
+    color: #252020;
+    letter-spacing: 0px;
+    position: relative;
+    flex: 0 0 auto;
+    min-width: 165px;
+    margin: 10px;
+}
+
+.myobj_address_text {
+    font: 400 12px/1.2 "Inter", Helvetica, Arial, serif;
+    color: #979797;
+    margin-top: 5px;
+
+}
+
+.edit:hover {
+    fill: #FF9A44;
+}
+.img_myobj_f{
+    height: 50px;
+    width: 50px;
+}
+
+.myobj_btn_f{
+    border-radius: 5px;
+    background: #FFFFFF;
+    height: 49px;
+    flex: 1;
+    border: 1px solid #E1E1E1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.5;
+    transition: .5s;
+    padding: 0 10px 0 0;
+    margin: 10px 15px 0px;
+}
+.myobj_btn_f--opacity{
+    opacity:1;
+}
+.myobj_btn_f:hover {
+    background-color: #ffeedf;
+  }
+.myobj_btn_f > .arrow {
+    display: flex;
+    align-items: center;
+    position: relative;
+    fill: #252020;
+    margin: 0 0 0 10px;
+    margin-left: auto;
+  }
+
+.image_profile_family{
+    width:100%;
+    height: 50px;
+    object-fit:cover;
+    border-radius: 5px;
+    margin: -1px;
+    border: 1px solid #E1E1E1;
+}
+
+
+.avatar_profile{
+    width: 150px;
+    height: 150px;
+    background-color:#FFF;
+    border-radius: 5px;
+    margin: 20px auto;
+    position: relative;
+}
+.avatar_profile > img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #E1E1E1;
+}
+.edit_avatar{
+    background: #ffffff;
+    height: 30px;
+    width: 30px;
+    border: none;
+    border-radius: 5px;
+    z-index: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    fill:#FF9A44;
+}
+.edit_avatar input[type=file]{
+    outline: 0;
+    opacity: 0;
+    user-select: none;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}

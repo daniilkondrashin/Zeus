@@ -1,0 +1,17 @@
+/*                      notification-namder                      */
+.notification-namder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 400 14px/1.2 "Inter", Helvetica, Arial, serif;
+    color: white;
+    background: #fc6076;
+    border-radius: 18px;
+    text-align: center;
+    position: absolute;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    top: -4px;
+    right: -1px;
+}

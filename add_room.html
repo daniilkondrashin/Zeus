@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/add_a_device.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blocks/header.css">
+    <link rel="stylesheet" href="css/blocks/buttons.css">
+    <title>Добавить помещение</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="add_a_device.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Добавить помещение</span>
+                </div>
+                <div class="header__container_icon-end">
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="content_form">
+                <form method="post" enctype="#">
+                    <fieldset>
+                        
+                        <label>Название</label>
+                        <div class="form_name">    
+                            <input class="name" type="text" name="name" placeholder="Центр">
+                        </div>
+                            <p class="paragraph">Назовите группу (Например: Первый этаж)</p>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_button">
+                <button class="footer_button_size">Добавить помещение</button>
+            </div>
+        </footer>
+    </div>
+    <script src="/scripts/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/blocks/header.css" />
+    <link rel="stylesheet" type="text/css" href="./css/blocks/dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="./css/information_device.css" />
+    <link rel="stylesheet" type="text/css" href="./css/setting_device.css" />
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="./SpaceControl.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z"
+                            fill="#FF9A44" />
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Настройки</span>
+                </div>
+                <div class="header__container_icon-end">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="content_form">
+                <form method="post" enctype="#">
+                    <label>Название</label>
+                    <div class="form_name">
+                        <input class="name" type="text" name="name" placeholder="SpaceControl">
+                    </div>
+                    <p class="paragraph">Не более 24 символов</p>
+                    <div class="dropdowns">
+                        <p class="dropdown__titel">Помещение</p>
+                        <div class="dropdown">
+                            <div class="dropdown-arrow">
+                                <button type='button' class="dropdown_button">Не выбрано</button>
+                                <div class="arrow_style">
+                                    <svg class="arrow_pos" width="12" height="6" viewBox="0 0 12 6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 0.60012C12 0.753712 11.9347 0.907305 11.8047 1.0243L6.47141 5.82406C6.21075 6.05865 5.78942 6.05865 5.52876 5.82406L0.195497 1.0243C-0.0651658 0.789711 -0.0651658 0.410529 0.195497 0.175941C0.45616 -0.0586471 0.877488 -0.0586471 1.13815 0.175941L6.00008 4.55152L10.862 0.175941C11.1227 -0.0586471 11.544 -0.0586471 11.8047 0.175941C11.9347 0.292935 12 0.446528 12 0.60012Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="dropdown_list">
+                                <li class="dropdown_list-item" data-value="kitchen">Кухня</li>
+                                <li class="dropdown_list-item" data-value="living_room">Гостиная</li>
+                                <li class="dropdown_list-item" data-value="hall">Зал</li>
+                                <li class="dropdown_list-item" data-value="bedroom">Спальня</li>
+                                <li id="long_name" class="dropdown_list-item" data-value="long_name">Помещение
+                                    №1 очень длинное название</li>
+                            </ul>
+                            <input class="dropdown_input-hidden" type="text" name="select-category" value="">
+                        </div>
+                        <p class="dropdown__titel">Пользователь</p>
+                        <div class="dropdown">
+                            <div class="dropdown-arrow">
+                                <button type='button' class="dropdown_button">Не выбрано</button>
+                                <div class="arrow_style">
+                                    <svg class="arrow_pos" width="12" height="6" viewBox="0 0 12 6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 0.60012C12 0.753712 11.9347 0.907305 11.8047 1.0243L6.47141 5.82406C6.21075 6.05865 5.78942 6.05865 5.52876 5.82406L0.195497 1.0243C-0.0651658 0.789711 -0.0651658 0.410529 0.195497 0.175941C0.45616 -0.0586471 0.877488 -0.0586471 1.13815 0.175941L6.00008 4.55152L10.862 0.175941C11.1227 -0.0586471 11.544 -0.0586471 11.8047 0.175941C11.9347 0.292935 12 0.446528 12 0.60012Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="dropdown_list">
+                                <li class="dropdown_list-item" data-value="name1">Иванов Иван</li>
+                                <li class="dropdown_list-item" data-value="name2">Петров Алексей</li>
+                            </ul>
+                            <input class="dropdown_input-hidden" type="text" name="select-category" value="">
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="ListlittleItem" style="margin-top: 15px;">
+                            <div class="ListItem_text">Защита от случайного нажатия</div>
+                            <div class="arrow">
+                                <input type="checkbox" class="switch_size">
+                            </div>
+                        </div>
+                    </a>
+                    <label>Активировать сирену</label>
+                    <a href="#">
+                        <div class="ListlittleItem" style="margin-top: 5px;">
+                            <div class="ListItem_text">По нажатию на кнопку</div>
+                            <div class="arrow">
+                                <input type="checkbox" class="switch_size">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="ListItem">
+                            <div class="item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.5 4.49758L12 5.53108L14.5 4.49758C16.1049 3.83414 17.8951 3.83414 19.5 4.49758L21.3714 5.27121C21.751 5.42816 22 5.80819 22 6.23079V18.4735C22 19.0443 21.5523 19.507 21 19.507C20.8728 19.507 20.7467 19.4819 20.6286 19.4331L19.5 18.9665C17.8951 18.3031 16.1049 18.3031 14.5 18.9665L12 20L9.5 18.9665C7.89515 18.3031 6.10485 18.3031 4.5 18.9665L3.37139 19.4331C2.85861 19.6451 2.27664 19.3873 2.07152 18.8573C2.02428 18.7352 2 18.605 2 18.4735V6.23079C2 5.80819 2.24895 5.42816 2.62861 5.27121L4.5 4.49758C6.10485 3.83414 7.89515 3.83414 9.5 4.49758ZM5.26408 6.34587L4 6.86844V17.0141C6.02542 16.254 8.25753 16.2887 10.2641 17.1182L11 17.422V7.282L8.73592 6.34587C7.62037 5.88471 6.37963 5.88471 5.26408 6.34587ZM15.2641 6.34587L13 7.281V17.422L13.7359 17.1182C15.7425 16.2887 17.9746 16.254 20 17.0141V6.86844L18.7359 6.34587C17.6204 5.88471 16.3796 5.88471 15.2641 6.34587Z"
+                                        fill="#FF9A44" />
+                                </svg>
+                            </div>
+                            <div class="ListItem_text">Руководство пользователя</div>
+                            <div class="arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.60012 6C9.75371 6 9.9073 6.06533 10.0243 6.19533L14.8241 11.5286C15.0586 11.7893 15.0586 12.2106 14.8241 12.4712L10.0243 17.8045C9.78971 18.0652 9.41053 18.0652 9.17594 17.8045C8.94135 17.5438 8.94135 17.1225 9.17594 16.8618L13.5515 11.9999L9.17594 7.13799C8.94135 6.87732 8.94135 6.45599 9.17594 6.19533C9.29293 6.06533 9.44653 6 9.60012 6Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./Setting_time_out.html">
+                        <div class="ListItem">
+                            <div class="item">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.751 5.00946C18.1157 4.65318 18.6832 4.63203 19.0719 4.94158L19.1652 5.02586L19.2622 5.12532C21.0086 6.9696 22 9.40828 22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 9.52097 2.90708 7.18195 4.52383 5.35934L4.74867 5.11404L4.83483 5.02586C5.2208 4.63083 5.85392 4.62349 6.24895 5.00946C6.61359 5.36573 6.6479 5.9326 6.34745 6.32841L6.26536 6.42357L6.19004 6.50048C4.79197 7.9769 4 9.925 4 12C4 16.4183 7.58172 20 12 20C16.4183 20 20 16.4183 20 12C20 10.0342 19.2892 8.18231 18.0349 6.74706L17.8208 6.51176L17.7346 6.42357C17.3487 6.02855 17.356 5.39542 17.751 5.00946ZM12 2C12.5523 2 13 2.44772 13 3V11C13 11.5523 12.5523 12 12 12C11.4477 12 11 11.5523 11 11V3C11 2.44772 11.4477 2 12 2Z"
+                                        fill="#FF9A44" />
+                                </svg>
+
+                            </div>
+                            <div class="ListItem_text">Временное отключение</div>
+                            <div class="arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M9.60012 6C9.75371 6 9.9073 6.06533 10.0243 6.19533L14.8241 11.5286C15.0586 11.7893 15.0586 12.2106 14.8241 12.4712L10.0243 17.8045C9.78971 18.0652 9.41053 18.0652 9.17594 17.8045C8.94135 17.5438 8.94135 17.1225 9.17594 16.8618L13.5515 11.9999L9.17594 7.13799C8.94135 6.87732 8.94135 6.45599 9.17594 6.19533C9.29293 6.06533 9.44653 6 9.60012 6Z"
+                                        fill="black" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer_button">
+                <button class="footer_button_size">Сохранить</button>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script type="text/javascript" src="scripts/dropdown.js"></script>
+
+</html>

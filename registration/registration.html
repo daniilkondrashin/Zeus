@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+    <link rel="stylesheet" href="style/registration.css">
+    <link rel="stylesheet" href="style/preloader.css">
+    <link rel="stylesheet" href="style/header_menu.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div id="preloader" class="visible"></div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="arrow_link" href="#">
+                    <svg class="arrow" width="10" height="18" viewBox="0 0 10 18" fill="#FF9A44"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M9.00001 18.0002C8.74401 18.0002 8.48801 17.9023 8.29301 17.7073L0.293006 9.70725C-0.0979941 9.31625 -0.0979941 8.68425 0.293006 8.29325L8.29301 0.29325C8.68401 -0.09775 9.31601 -0.09775 9.70701 0.29325C10.098 0.68425 10.098 1.31625 9.70701 1.70725L2.41401 9.00025L9.70701 16.2932C10.098 16.6842 10.098 17.3162 9.70701 17.7073C9.51201 17.9023 9.25601 18.0002 9.00001 18.0002Z"
+                            fill="#FF9A44" />
+                    </svg>
+                </a>
+                <div class="title-content">
+                    <span class="header_menu_titel"></span>
+                </div>
+                <form class="delete__form" method="post" enctype="#">
+                    <button class="delete__button"></button>
+                </form>
+            </div>
+            <div class="progressbar">
+                <div class="progressbar-background_outer">
+                    <div class="progressbar-background_inner">
+                        <div class="progressbar_number__container">
+                            <span class="progressbar_number">1/4</span>
+                            <svg class="progressbar_number-check_mark --hidden " width="63" height="50"
+                                viewBox="0 0 63 50" fill="#FF9A44" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.7189 42.1745L5.33469 22.7903C4.11431 21.57 2.13567 21.57 0.915288 22.7903C-0.305096 24.0107 -0.305096 25.9894 0.915288 27.2097L22.7902 49.0847C24.115 50.4094 26.2997 50.2788 27.4571 48.8057L61.832 5.05581C62.8983 3.69871 62.6626 1.73417 61.3055 0.667886C59.9484 -0.398402 57.9838 -0.162658 56.9176 1.19444L24.7189 42.1745Z"
+                                    fill="#FF9A44" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <svg class="progress-ring" width="150" height="150">
+                    <circle class="progress-ring__circle" stroke="#FF9A44" stroke-linecap="round" stroke-width="15"
+                        cx="75" cy="75" r="67" fill="transparent" />
+                </svg>
+            </div>
+            <h1 class="titel">Создайте аккаунт</h1>
+        </header>
+        <main class="main">
+            <div class="initials">
+                <form action="" class="form__input">
+                    <div class="input-container">
+                        <label for="name" class="label-input">Имя</label>
+                        <input id="name" type="text" class="input" size="1" placeholder="Например, Иван " required>
+                        <p id="name__subtitle" class="main__subtitle_error ">Пожалуйста, введите имя</p>
+                    </div>
+                    <div class="input-container">
+                        <label for="surname" class="label-input">Фамилия</label>
+                        <input id="surname" type="text" class="input" size="1" placeholder="Например, Иванов" required>
+                        <p id="surname__subtitle" class="main__subtitle_error ">Пожалуйста, введите фамилию</p>
+                    </div>
+                </form>
+            </div>
+            <div class="contact_details">
+                <form action="" class="form__input">
+                    <div class="input-container">
+                        <label for="email" class="label-input">Email</label>
+                        <input id="email" type="email" class="input" size="1" placeholder="Например, ivan@mail.ru" oninput="changeEmail(this)" required>
+                        <p id="email__subtitle" class="main__subtitle_error ">Пожалуйста, введите email</p>
+                    </div>
+                    <div class="input-container">
+                        <label for="phone_number" class="label-input">Телефон</label>
+                        <input id="phone_number" type="tel" class="input" size="1" placeholder="+7 911 231 43 54" oninput="changeNum(this)" maxlength="18" required>
+                        <p id="phone_number__subtitle" class="main__subtitle_error ">Пожалуйста, введите номер телефона
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <div class="confirmation_code">
+                <p class="main__titel">Мы отправили код подтверждения
+                    на номер <span id="enteredNumber">+7 911 231 43 54</span></p>
+                <form action="" class="form__input">
+                    <div class="input-container">
+                        <label for="confirmation_code" class="label-input">Код из SMS</label>
+                        <input id="confirmation_code" type="number" class="input" size="1" oninput="changeConfirmationCode(this)" required>
+                        <p id="confirmation_code__subtitle" class="main__subtitle_error ">Пожалуйста, введите код из СМС
+                        </p>
+                        <p id="invalid_code" class="main__subtitle_error ">Неверный код!</p>
+                    </div>
+                </form>
+                <div id="waiting_for_the_code">
+                    <p class="main__subtitle timer_block">Получить новый код можно через 00:59</p>
+                </div>
+                <div id="waiting_for_the_code">
+                    <p id="new_code" class="main__subtitle">Получить новый</p>
+                </div>
+            </div>
+            <div class="password">
+                <form action="" class="form__input">
+                    <div class="input-container">
+                        <label for="password" class="label-input">Пароль</label>
+                        <div class="password_input">
+                            <input id="password" type="password" class="input" size="1" placeholder="****" required>
+                            <svg class="password_visible__icon" width="24" height="26" viewBox="0 0 24 26"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 4.88885C15.5878 4.88885 18.7554 7.38884 21.5113 12.2308L21.7172 12.5983L22 13.1111L21.5113 13.9914C18.7554 18.8333 15.5878 21.3333 12 21.3333C8.41215 21.3333 5.24464 18.8333 2.48874 13.9914L2.28282 13.6238L2 13.1111L2.28282 12.5983C5.08652 7.5154 8.32245 4.88885 12 4.88885ZM12 6.94441C9.29692 6.94441 6.72829 8.91316 4.30532 13.1111C6.72829 17.309 9.29692 19.2777 12 19.2777C14.6297 19.2777 17.1289 17.4175 19.487 13.4654L19.6948 13.1112L19.4867 12.7568C17.1249 8.8023 14.6259 6.94441 12 6.94441ZM12 10.0277C13.6569 10.0277 15 11.4082 15 13.1111C15 14.814 13.6569 16.1944 12 16.1944C10.3431 16.1944 9 14.814 9 13.1111C9 11.4082 10.3431 10.0277 12 10.0277Z" />
+                            </svg>
+                            <svg class="password_invisible__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M5.63604 5.56529L10.6072 10.5356C10.9673 10.1877 11.4585 9.97347 12 9.97347C13.1046 9.97347 14 10.8649 14 11.9646C14 12.5071 13.7821 12.9989 13.4287 13.3581L18.364 18.2932C18.7545 18.6837 18.7545 19.3169 18.364 19.7074C17.9734 20.0979 17.3403 20.0979 16.9497 19.7074L16.0498 18.8084C14.7649 19.5525 13.4151 19.9292 12 19.9292C8.41439 19.9292 5.2486 17.5106 2.49391 12.8261L2.28282 12.4613L2 11.9646L2.28282 11.4679C3.12423 9.99032 4.00457 8.72699 4.92408 7.68241L4.22183 6.9795C3.8313 6.58897 3.8313 5.95581 4.22183 5.56529C4.61235 5.17476 5.24551 5.17476 5.63604 5.56529ZM4.54569 11.5687L4.3053 11.9644L4.51334 12.3076C6.87515 16.1382 9.37413 17.9378 12 17.9378C12.8728 17.9378 13.7313 17.7393 14.575 17.3341L10.7964 13.5547C10.6452 13.4412 10.5108 13.3068 10.3974 13.1558L6.33747 9.09375C5.7318 9.79511 5.13449 10.6189 4.54569 11.5687ZM12 4C15.5856 4 18.7514 6.41863 21.5061 11.1031L21.7172 11.4679L22 11.9646L21.5113 12.8173C20.7425 14.1258 19.9416 15.2576 19.1086 16.2096L17.6965 14.7975C18.3734 14.0081 19.0396 13.0654 19.6948 11.9648C17.2718 7.89826 14.7031 5.99116 12 5.99116C11.1437 5.99116 10.3009 6.18253 9.47198 6.5733L7.99438 5.09542C9.26603 4.36816 10.6011 4 12 4Z" />
+                            </svg>
+                        </div>
+                        <p id="password__subtitle" class="main__subtitle_error ">Пожалуйста, придумайте пароль</p>
+                        <p class="subtitle" id="subtitle_password_error">Используйте не менее 8 символов</p>
+                    </div>
+                    <div class="input-container">
+                        <label for="confirm_password" class="label-input gray">Подтвердить пароль</label>
+                        <input id="confirm_password" type="password" class="input" size="1" placeholder="****" required>
+                        <p id="passwords_do_not_match" class="subtitle">Пароли не совпадают</p>
+                    </div>
+                </form>
+            </div>
+            <div class="done">
+                <p class="main__titel">Вы успешно создали аккаунт Zeus. Однако для работы с автоматизацией необходимо
+                    подтвердить Email.</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <form action="" class="footer_button">
+                <button type="button" class="footer_button_size">Далее</button>
+            </form>
+            <div class="footer__text__container">
+                <a href="../autorization/autorization.html" class="footer__text">У меня есть аккаунт</a>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="scripts/registration.js"></script>
+    <script type="text/javascript" src="scripts/password_visible_registration.js"></script>
+    <script type="text/javascript" src="scripts/progressBar.js"></script>
+    <script>
+        function loadData() {
+            return new Promise((resolve, reject) => {
+                // setTimeout не является частью решения
+                // Код ниже должен быть заменен на логику подходящую для решения вашей задачи
+                setTimeout(resolve, 1500);
+            })
+        }
+
+        loadData()
+            .then(() => {
+                let preloaderEl = document.getElementById('preloader');
+                preloaderEl.classList.add('hidden');
+                preloaderEl.classList.remove('visible');
+            });
+    </script>
+</body>
+
+</html>

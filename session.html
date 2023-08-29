@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" type="text/css" href="./css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+    <link rel="stylesheet" href="css/notification_container.css">
+    <link rel="stylesheet" type="text/css" href="./css/Notifications.css" />
+    <link rel="stylesheet" type="text/css" href="./css/setting_device.css" />
+    <link rel="stylesheet" type="text/css" href="./css/profile.css" />
+    <link rel="stylesheet" type="text/css" href="./css/blocks/header.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blocks/buttons.css">
+</head>
+
+<body>
+    <div class="notification__container">
+        <div class="notification__header"></div>
+        <div class="notification__main">
+            <div class="main__container">
+                <h1 class="title__text">Уведомление</h1>
+                <h2 class="subtitel__text">Нельзя закрепить больше 10 сценариев на главном экране</h2>
+            </div>
+        </div>
+        <div class="notification__footer">
+            <div class="footer__container">
+                <div class="one_block">
+                    <div class="notification__button">Хорошо</div>
+                </div>
+                <div class="two_blocks">
+                    <div class="notification__button" id="delete_two_blocks">Удалить</div>
+                    <div class="notification__button button_cancellation" id="cancellation">Отмена</div>
+                </div>
+                <div class="multi_blocks">
+                    <div class="notification__button" id="pin_the_script">Закрепить сценарий</div>
+                    <div class="notification__button">Редактировать</div>
+                    <div class="notification__button" id="delete_multi_blocks">Удалить</div>
+                    <div class="notification__button button_cancellation" id="cancellation">Отмена</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="./setting.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z">
+                        </path>
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Сессии</span>
+                </div>
+                <div class="header__container_icon-end">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="n_date_s">Сессия показывает информацию о том, с каких
+                устройств и в какое время вы входили на сайт</div>
+            <div class="title">
+
+                <div class="text_n">Текущая сессия</div>
+            </div>
+            <div class="list_notifications">
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">iPhone 11, iOS 15.6.1 </div>
+                                <div class="n_text ">31.28.3.105</div>
+                                <div class="n_date">В сети</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <div class="title">
+                <div class="text_n">Другие сессии</div>
+            </div>
+            <div class="list_notifications">
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">Samsung A52, Android 11</div>
+                                <div class="n_text ">179.59.18.91</div>
+                                <div class="n_date">Вчера в 13:32</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">iPhone 11, iOS 15.6.1 </div>
+                                <div class="n_text ">31.28.3.105</div>
+                                <div class="n_date">01.08.23 г. в 22:00</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">iPhone 11, iOS 15.6.1 </div>
+                                <div class="n_text ">31.28.3.105</div>
+                                <div class="n_date">01.08.23 г. в 22:00</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">iPhone 11, iOS 15.6.1 </div>
+                                <div class="n_text ">31.28.3.105</div>
+                                <div class="n_date">01.08.23 г. в 22:00</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="block_noti_normal b_n_s">
+                        <div class="block_info">
+                            <div class="info_s">
+                                <div class="n_name ">iPhone 11, iOS 15.6.1 </div>
+                                <div class="n_text ">31.28.3.105</div>
+                                <div class="n_date">01.08.23 г. в 22:00</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+    </main>
+    <footer>
+        <div class="footer_button">
+            <button class="footer_button_size">Завершить все сессии</button>
+        </div>
+    </footer>
+    </div>
+    <script src="scripts/notification_container_confirmation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,185 @@
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1;
+  height: 100%;
+  background: #F5F5F5;
+  min-width: 290px;
+}
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  /* position: absolute; */
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+main {
+  flex: 1 1 auto;
+  margin: 0 15px 0 15px;
+}
+
+.footer {
+  background: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+/*              information_device               */
+.information_device{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 20px 0px 80px;
+  justify-content: space-between;
+}
+.information_device__image{
+  min-width: 290px;
+  min-height: 160px;
+  max-height: 260px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+}
+.img_id{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  display: flex;
+  justify-content: center;
+}
+.img_id_d{
+width: 100%;
+height: 100%;
+object-fit: contain;
+padding: 10px;
+}
+.important_info{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 2fr));
+  grid-gap: 10px;
+}
+.block_info_device {
+  display: inline-table;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #ededed;
+  border-radius: 5px 5px 5px 5px;
+  height: 80px;
+  min-width: 140px;
+  padding: 10px 5px;
+  fill:#FF9A44;
+}
+.title_info_device {
+  font: 500 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  min-width: 130px;
+  max-width: 180px;
+  height: 30px;
+  margin-bottom: 8px;
+}
+.columns_info {
+  display: flex;
+  height: 20px;
+}
+.icon_info_device {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.text_info_device {
+  display: flex;
+  align-items: center;
+  font: 300 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+}
+.block_info_bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 10px;
+  padding: 9px 5px;
+  height: 42px;
+  justify-content: center;
+  fill:#FF9A44;
+}
+.block_ib {
+  position: relative;
+  flex-grow: 1;
+}
+  
+.icon_bottom {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 28px;
+}
+.text_bottom {
+  position: relative;
+  flex-grow: 1;
+  float: left;
+  margin-left: 20px;
+}
+.text_info_device_regular {
+  display: flex;
+  align-items: center;
+  font: 500 12px/1.2 "Inter", Helvetica, Arial, serif;
+  color: #252020;
+  letter-spacing: 0px;
+  
+}
+.switch__svg {
+  fill: #F9F9F9;
+  stroke: #BFBFBF;
+}
+.switch-toggle__svg {
+  fill: #BFBFBF;
+}
+/*          Модификаторы           */
+.info_device_error,
+.info_device_error .icon_bottom,
+.info_device_error .icon_info_device,
+.info_device_error .block_info_bottom {
+background-color: #ffdfdf;
+fill:#FF9A44;
+stroke-width: 0px;
+}
+.info_device_not_active .title_info_device,
+.info_device_not_active .text_info_device, 
+.info_device_not_active .block_info_device__icon,
+.info_device_not_active .icon_bottom,
+.info_device_not_active .icon_info_device,
+.info_device_not_active .text_info_device_regular {
+color: #25202060;
+fill: #25202030;
+stroke-width: 0px;
+}
+/* --------------------------------- */

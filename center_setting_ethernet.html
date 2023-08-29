@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<div class="wrapper">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="google" content="notranslate">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="./css/common.css" />
+        <link rel="stylesheet" type="text/css" href="./css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="./css/information_device.css" />
+        <link rel="stylesheet" type="text/css" href="./css/setting_device.css" />
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/blocks/header.css">
+        <link rel="stylesheet" href="css/blocks/dropdown.css">
+        <link rel="stylesheet" href="css/blocks/buttons.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__container _container">
+                <a class="header__container_icon-start" href="./center_setting.html">
+                    <svg width="24" height="24" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M16.0002 20.9998C15.7443 20.9998 15.4882 20.9018 15.2933 20.7068L7.29325 12.7068C6.90225 12.3158 6.90225 11.6838 7.29325 11.2928L15.2933 3.29276C15.6842 2.90176 16.3162 2.90176 16.7072 3.29276C17.0982 3.68376 17.0982 4.31576 16.7072 4.70676L9.41425 11.9998L16.7072 19.2928C17.0982 19.6838 17.0982 20.3158 16.7072 20.7068C16.5122 20.9018 16.2562 20.9998 16.0002 20.9998Z"
+                            fill="#FF9A44"></path>
+                    </svg>
+                </a>
+                <div class="header__container_titel">
+                    <span>Настройки Ethernet</span>
+                </div>
+                <div class="header__container_icon-end">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="content_form">
+                <form method="post" enctype="#">
+                    <a href="#">
+                        <div class="ListlittleItem">
+                            <div class="ListItem_text">Подключение по Ethernet</div>
+                            <div class="switch">
+                                <input type="checkbox" class="switch_size">
+                            </div>
+                        </div>
+                    </a>
+                    <div class="dropdowns">
+                        <p class="dropdown__titel">Помещение</p>
+                        <div class="dropdown">
+                            <div class="dropdown-arrow">
+                                <button type='button' class="dropdown_button">Не выбрано</button>
+                                <div class="arrow_style">
+                                    <svg class="arrow_pos" width="12" height="6" viewBox="0 0 12 6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 0.60012C12 0.753712 11.9347 0.907305 11.8047 1.0243L6.47141 5.82406C6.21075 6.05865 5.78942 6.05865 5.52876 5.82406L0.195497 1.0243C-0.0651658 0.789711 -0.0651658 0.410529 0.195497 0.175941C0.45616 -0.0586471 0.877488 -0.0586471 1.13815 0.175941L6.00008 4.55152L10.862 0.175941C11.1227 -0.0586471 11.544 -0.0586471 11.8047 0.175941C11.9347 0.292935 12 0.446528 12 0.60012Z"
+                                            fill="black" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <ul class="dropdown_list">
+                                <li class="dropdown_list-item" data-value="DHCP">DHCP</li>
+                                <li class="dropdown_list-item" data-value="Static">Static</li>
+                            </ul>
+                            <input class="dropdown_input-hidden" type="text" name="select-category" value="">
+                        </div>
+                    </div>
+                    <div class="internet-setting">
+                        <label>IP-адрес</label>
+                        <div class="form_name">
+                            <input class="name ip_address" type="text" id="ipv4"
+                                pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}" placeholder="10.0.10.25" maxlength="15">
+                        </div>
+                        <label>Маска подсети</label>
+                        <div class="form_name">
+                            <input class="name" type="text" id="mask" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+                                placeholder="10.0.10.25" maxlength="15">
+                        </div>
+                        <label>Маршрутизатор</label>
+                        <div class="form_name">
+                            <input class="name" type="text" id="router" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+                                placeholder="10.0.10.25" maxlength="15">
+                        </div>
+                        <label>DNS</label>
+                        <div class="form_name">
+                            <input class="name" type="text" id="dns" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}"
+                                placeholder="10.0.10.25" maxlength="15">
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer_button">
+                <button type="submitgt" class="footer_button_size">Сохранить</button>
+            </div>
+        </footer>
+</div>
+<script type="text/javascript" src="scripts/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js'></script>
+<script type="text/javascript">
+    var ipv4_address = $('#ipv4');
+    var mask = $('#mask')
+    var router = $('#router');
+    var dns = $('#dns')
+    ipv4_address.inputmask({
+        alias: "ip",
+        greedy: false 
+    });
+    mask.inputmask({
+        alias: "ip",
+        greedy: false 
+    });
+    router.inputmask({
+        alias: "ip",
+        greedy: false 
+    });
+    dns.inputmask({
+        alias: "ip",
+        greedy: false 
+    });
+</script>
+<script type="text/javascript" src="scripts/dropdown.js"></script>
+</body>
+
+
+
+</html>
